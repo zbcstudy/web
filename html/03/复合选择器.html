@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器</title>
+    <style>
+        .singer {
+            color: red;
+        }
+
+        /*交集选择器*/
+        div.singer {
+            font-weight: 700;
+        }
+
+        /*并集选择器*/
+        div, p {
+            background-color: aqua;
+        }
+
+        /*伪元素选择器 ::before*/
+        #zxy::before {
+            content: "添加";
+        }
+    </style>
+</head>
+<body>
+    <div class="singer">刘德华</div>
+    <div class="singer" id="zxy">张学友</div>
+    <p class="singer">汪峰</p>
+    <p class="singer">韩红</p>
+</body>
+</html>
