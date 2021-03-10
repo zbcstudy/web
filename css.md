@@ -49,6 +49,7 @@ letter-spacing: 字间距
 word-spacing: 单词间距 针对英文
 颜色半透明： rgb(0,0,0,0.5) 第4个参数控制颜色透明程度
 text-shadow: 文字阴影效果
+text-decoration: 文本装饰
 ```
 
 ##块元素和行内元素
@@ -96,5 +97,24 @@ eg:
     ::first-letter //伪元素选择器
      :first-letter  //伪类选择器
 ```
+
+##背景
+``` 
+background-color
+background-image: 背景图片
+background-repeat: 是否平铺
+background-position: 背景图片位置
+background-attachment： 背景图片是否固定
+```
+
+## CSS三大特性
+###层叠性
+###继承性
+###优先级
+```
+优先级从低到高  
+标签选择器->类选择器/伪类选择器->id选择器->行内样式-> !important 
+```
+
 
 
