@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+            padding: 10px;
+        }
+        /*浮动会找他最近的父元素进行对齐 */
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

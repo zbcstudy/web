@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>趣图</title>
+    <style>
+        /*清空默认的内外边距 几乎是我们写CSS必须写的 */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        ul {
+            list-style: none; /*取消列表自带的小点*/
+        }
+        .searchPic {
+            width: 238px;
+            height: 294px;
+            border: 1px solid #D9E0EE;
+            border-top: 3px solid #FF8400; /*border border-top顺序不能改变*/
+            margin: 100px;
+        }
+        /*h3没有给宽度 不会撑大盒子本身的宽度 会继承父亲的宽度*/
+        .searchPic h3 {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #D9E0EE;
+            font-size: 16px;
+            font-weight: normal;
+            /*margin-left: 10px;*/ /*不适合*/
+            padding-left: 12px;
+        }
+        .searchPic img {
+            margin: 7px 0 0 8px;
+        }
+        .searchPic ul li a {
+            font-size: 12px;
+            color: #666;
+            text-decoration: none; /*取消下划线*/
+        }
+        .searchPic ul {
+            margin-left: 8px;
+        }
+        .searchPic ul li {
+            padding-left: 10px;
+            height: 26px;
+            line-height: 26px;
+            background: url("../../static/image/square.png") no-repeat left center;
+        }
+        .searchPic ul li a:hover {
+            text-decoration: underline;
+            color: #fff300;
+        }
+    </style>
+</head>
+<body>
+    <div class="searchPic">
+        <h3>搜索趣图</h3>
+        <img src="../../static/image/happy.gif"  alt="">
+        <ul>
+            <li><a href="#">GIF小胖墩 趣图 一脸无辜 趣图 一脸无辜</a></li>
+            <li><a href="#">GIF小胖墩 趣图 一脸无辜 趣图 一脸无辜</a></li>
+            <li><a href="#">GIF小胖墩 趣图 一脸无辜 趣图 一脸无辜</a></li>
+        </ul>
+    </div>
+</body>
+</html>

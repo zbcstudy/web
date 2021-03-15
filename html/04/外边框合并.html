@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边框合并问题</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin-top: 50px;
+            /*border: plum solid 1px;*/
+            padding: 1px; /*这种方式也可以解决外边框合并的问题*/
+        }
+        .son {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            /*
+                此时外边距并不会生效, 想要生效的话可以给父元素一个边框或者一个padding
+            */
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
